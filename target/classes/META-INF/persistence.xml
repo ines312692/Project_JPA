@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0">
+
+
+	<persistence-unit name="exemple1"
+		transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<!-- les entités -->
+		<class>tn.ensit.info3.glid.projet_jpa.model.Maire</class>
+		<class>tn.ensit.info3.glid.projet_jpa.model.Classe</class>
+		<class>tn.ensit.info3.glid.projet_jpa.model.Commune</class>
+		<class>tn.ensit.info3.glid.projet_jpa.model.Departement</class>
+
+		<properties>
+			<!-- Database connection settings -->
+			<property name="jakarta.persistence.jdbc.driver"
+				value="com.mysql.cj.jdbc.Driver" />
+			<property name="jakarta.persistence.jdbc.url"
+				value="jdbc:mysql://localhost:3306/bd_glid_2025" />
+			<property name="jakarta.persistence.jdbc.user"
+				value="app_glid_2025" />
+			<property name="jakarta.persistence.jdbc.password"
+				value="app_glid_2025" />
+
+			<!-- Automatically export the schema -->
+			<property
+				name="jakarta.persistence.schema-generation.database.action"
+				value="update" />
+
+			<!-- Echo all executed SQL to console -->
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.highlight_sql" value="true" />
+		</properties>
+
+	</persistence-unit>
+	<persistence-unit name="exemple2"
+		transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<!-- les entités -->
+		<class>tn.ensit.info3.glid.projet_jpa.model_partie2.Maire</class>
+		<class>tn.ensit.info3.glid.projet_jpa.model_partie2.Commune</class>
+		<class>tn.ensit.info3.glid.projet_jpa.model_partie2.CommuneMaire</class>
+		
+
+		<properties>
+			<!-- Database connection settings -->
+			<property name="jakarta.persistence.jdbc.driver"
+				value="com.mysql.cj.jdbc.Driver" />
+			<property name="jakarta.persistence.jdbc.url"
+				value="jdbc:mysql://localhost:3306/bd_glid_2025_partie2" />
+			<property name="jakarta.persistence.jdbc.user"
+				value="app_glid_2025" />
+			<property name="jakarta.persistence.jdbc.password"
+				value="app_glid_2025" />
+
+			<!-- Automatically export the schema -->
+			<property
+				name="jakarta.persistence.schema-generation.database.action"
+				value="update" />
+
+			<!-- Echo all executed SQL to console -->
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.highlight_sql" value="true" />
+		</properties>
+
+	</persistence-unit>
+	<persistence-unit name="exemple3"
+		transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<!-- les entités -->
+		<class>tn.ensit.info3.glid.projet_jpa.model_partie3.Maire</class>
+		<class>tn.ensit.info3.glid.projet_jpa.model_partie3.Commune</class>
+		<class>tn.ensit.info3.glid.projet_jpa.model_partie3.Departement</class>
+		
+
+		<properties>
+			<!-- Database connection settings -->
+			<property name="jakarta.persistence.jdbc.driver"
+				value="com.mysql.cj.jdbc.Driver" />
+			<property name="jakarta.persistence.jdbc.url"
+				value="jdbc:mysql://localhost:3306/bd_glid_2025_partie3" />
+			<property name="jakarta.persistence.jdbc.user"
+				value="app_glid_2025" />
+			<property name="jakarta.persistence.jdbc.password"
+				value="app_glid_2025" />
+
+			<!-- Automatically export the schema -->
+			<property
+				name="jakarta.persistence.schema-generation.database.action"
+				value="update" />
+
+			<!-- Echo all executed SQL to console -->
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.highlight_sql" value="true" />
+		</properties>
+
+	</persistence-unit>
+	<persistence-unit name="exemple4"
+		transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<!-- les entités -->
+		<!-- <class>tn.ensit.info3.glid.projet_jpa.model_partie4_heritage.Utilisateur</class>-->
+		<class>tn.ensit.info3.glid.projet_jpa.model_partie4_heritage.Employe</class>
+
+		<properties>
+			<!-- Database connection settings -->
+			<property name="jakarta.persistence.jdbc.driver"
+				value="com.mysql.cj.jdbc.Driver" />
+			<property name="jakarta.persistence.jdbc.url"
+				value="jdbc:mysql://localhost:3306/bd_glid_2025_partie4" />
+			<property name="jakarta.persistence.jdbc.user"
+				value="app_glid_2025" />
+			<property name="jakarta.persistence.jdbc.password"
+				value="app_glid_2025" />
+
+			<!-- Automatically export the schema -->
+			<property
+				name="jakarta.persistence.schema-generation.database.action"
+				value="update" />
+
+			<!-- Echo all executed SQL to console -->
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.highlight_sql" value="true" />
+		</properties>
+
+	</persistence-unit>
+	<persistence-unit name="exemple6"
+		transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<!-- les entités -->
+		<class>tn.ensit.info3.glid.projet_jpa.model_partie6_jpa.Maire</class>
+		<class>tn.ensit.info3.glid.projet_jpa.model_partie6_jpa.Commune</class>
+		<class>tn.ensit.info3.glid.projet_jpa.model_partie6_jpa.Departement</class>
+
+		<properties>
+			<!-- Database connection settings -->
+			<property name="jakarta.persistence.jdbc.driver"
+				value="com.mysql.cj.jdbc.Driver" />
+			<property name="jakarta.persistence.jdbc.url"
+				value="jdbc:mysql://localhost:3306/bd_glid_2025_partie6" />
+			<property name="jakarta.persistence.jdbc.user"
+				value="app_glid_2025" />
+			<property name="jakarta.persistence.jdbc.password"
+				value="app_glid_2025" />
+
+			<!-- Automatically export the schema -->
+			<property
+				name="jakarta.persistence.schema-generation.database.action"
+				value="create-drop" />
+
+			<!-- Echo all executed SQL to console -->
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.highlight_sql" value="true" />
+		</properties>
+
+	</persistence-unit>
+</persistence>
