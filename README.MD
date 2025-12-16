@@ -70,37 +70,7 @@ This project uses a **municipal governance domain model** (Mayors, Communes, Dep
 
 ## Project Structure
 
-```
-Projet-JPA/
-   pom.xml                                    # Maven build configuration
-   src/
-      main/
-         java/tn/ensit/info3/glid/projet_jpa/
-            App.java                       # Part 1 - Basic CRUD
-            AppPartie2.java                # Part 2 - Many-to-Many
-            AppPartie3.java                # Part 3 - Embedded objects
-            AppPartie4.java                # Part 4 - Inheritance
-            AppPartie5.java                # Part 5 - Native queries
-            AppPartie6.java                # Part 6 - JPQL queries
-            model/                         # Part 1 entities
-               Civilite.java              # Enum: M, Mme
-               Maire.java                 # Mayor entity
-               Commune.java               # Municipality entity
-               Departement.java           # Department entity
-               Classe.java                # Class entity (composite key)
-               ClePrimaireClasse.java     # Embeddable composite key
-            model_partie2/                 # Part 2 - Join table entities
-            model_partie3/                 # Part 3 - Embedded entities
-            model_partie4_heritage/        # Part 4 - Inheritance entities
-            model_partie6_jpa/             # Part 6 - Named query entities
-         resources/
-             META-INF/
-                 persistence.xml            # JPA configuration
-      test/
-          java/
-              AppTest.java                   # Unit tests
-   README.md                                  # This file
-```
+
 
 ## Prerequisites
 
