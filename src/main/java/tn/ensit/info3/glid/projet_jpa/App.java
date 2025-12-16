@@ -14,12 +14,12 @@ public class App {
 		try (EntityManagerFactory emf = Persistence.createEntityManagerFactory("exemple1");
 				EntityManager em = emf.createEntityManager(); 
 			 Scanner sc = new Scanner(System.in)) {
-			//ecrire(em, sc);
-			// chercher(em);
-			// modifier(em, sc);
-			//supprimer(em, sc);
-			//creerCommune(em);
-			//chercherCommune(em);
+			ecrire(em, sc);
+			 chercher(em);
+			modifier(em, sc);
+			supprimer(em, sc);
+			creerCommune(em);
+			chercherCommune(em);
 		}
 	}
 
